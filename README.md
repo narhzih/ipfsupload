@@ -12,7 +12,7 @@ The Postman documentation can be found [here](https://documenter.getpostman.com/
 
 ## Initial Setup
 
-To proper setup and run the project, please follow the instructions below
+To properly setup and run the project, please follow the instructions below
 
 - After cloning the project, cd into the root directory
 - Run ```cp .env.example .env```. This command will copy the .env.example file and rename it as `.env`
