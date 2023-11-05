@@ -1,0 +1,19 @@
+version: '3'
+
+services: 
+  ipfs_api: 
+    build: 
+      context: . 
+      dockerfile: Dockerfile 
+    image: ipfs_api
+    container_name: ipfs_api 
+    restart: unless-stopped 
+    env_file: .env 
+    # environment: 
+    #   - WEB3STORAGE_TOKEN=$WEB3STORAGE_TOKEN
+    #   - SECRET_PHRASE=$SECRET_PHRASE
+    #   - SECRET_SALT=$SECRET_SALT
+    ports: 
+      - "3000:3000"
+volumes:
+  node_modules:
