@@ -1,0 +1,1 @@
+export const BYTE_T0_MB = 0.00000095367432;

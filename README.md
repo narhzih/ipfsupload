@@ -2,12 +2,12 @@
 
 This repository demonstrates how to upload a file to an IPFS storage using NodeJs, Typescript, and [Web3Storage](https://web3.storage/docs/)
 
-The Postman documentation can be found [here](https://google.com)
+The Postman documentation can be found [here](https://documenter.getpostman.com/view/8405540/2s9YXfaNdG)
 
 ## Requirements
 
 - NodeJs >= 16
-- A [Web3Storage API Token](https://web3.storage/docs/#get-an-api-token) 
+- A [Web3Storage API Token](https://web3.storage/docs/#get-an-api-token)
 - Docker
 
 ## Initial Setup
@@ -27,3 +27,9 @@ The project contains both a `unit test suite` and an `end-to-end` test suite, al
 
 - All `e2e` tests are written in the `src/__test__/e2e` directory.
 - All the test Config files can be found in `src/__test__/config`
+
+## Needed improvements
+
+- As much as the API allows the uploads of files > 100MB, it is very slow. It takes up to 2 minutes to get a response back from the server when an upload request
+of such file is being made. This can be better improved by using a more robust upload logic, that has a tracking system which users can use to see the current upload progress.
+- The Current IPFS storage being used doesn't allow for the easy implementation of handling large files uploads using the currently available libraries. It also isn't easy to write e2e tests around the upload process. This could probably be improved later on by using another IPFS storage

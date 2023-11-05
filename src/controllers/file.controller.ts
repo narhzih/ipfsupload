@@ -9,7 +9,3 @@ export const getFile = async (req: Request, res: Response) => {
         fileUrl,
     });
 };
-
-export const getFileStatus = async (req: Request, res: Response) => {
-    const web3Client = Web3StorageService.makeStorageClient();
-};
