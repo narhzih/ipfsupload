@@ -12,12 +12,25 @@ The Postman documentation can be found [here](https://documenter.getpostman.com/
 
 ## Initial Setup
 
-To properly setup and run the project, please follow the instructions below
+To properly setup and run the project, please follow the instructions below:
 
 - After cloning the project, cd into the root directory
 - Run ```cp .env.example .env```. This command will copy the .env.example file and rename it as `.env`
 - Fill the contents of the `.env` with the required values
-- Once that is done, you can start the project using `docker-compose up -d` (the api uses port `3000` automatically. You should make sure nothing is running on that port, or simply edit the port)
+
+### Running with Docker
+
+To run the API using Docker
+
+- Once that setup is done is done, you can start the project using `docker-compose up -d` (the api uses port `3000` automatically. You should make sure nothing is running on that port, or simply edit the port)
+- If you don't want to use Docker, you can just run `npm install`, which will install all
+
+### Running without Docker
+
+To run the API without docker:
+
+- Run `npm install` to install the necessary dependencies
+- Use `npm run start` to run the api, which should start a server on port 3000
 
 ## Testing
 
@@ -27,6 +40,7 @@ The project contains both a `unit test suite` and an `end-to-end` test suite, al
 
 - All `e2e` tests are written in the `src/__test__/e2e` directory.
 - All the test Config files can be found in `src/__test__/config`
+- Use the commands `npm run test:unit` to run unit tests, `npm run test:e2e` to run e2e tests, and `npm run test` to run all tests.
 
 ## Needed improvements
 
