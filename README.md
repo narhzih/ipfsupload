@@ -27,4 +27,3 @@ The project contains both a `unit test suite` and an `end-to-end` test suite, al
 
 - All `e2e` tests are written in the `src/__test__/e2e` directory.
 - All the test Config files can be found in `src/__test__/config`
-
